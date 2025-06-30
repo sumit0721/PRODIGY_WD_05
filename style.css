@@ -1,0 +1,149 @@
+/* Default gradient background before search */
+body.default-bg {
+  background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #1f1f1f;
+  transition: all 0.6s ease-in-out;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  transition: all 0.6s ease;
+}
+
+.app {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search {
+  margin-top: 10px;
+}
+
+.search input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.search button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #2d98da;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #2471a3;
+}
+
+#currentDate {
+  margin-top: 10px;
+}
+
+.current-weather {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.temp-info h2 {
+  font-size: 3em;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.extra-details {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.tile {
+  background: rgba(255,255,255,0.7);
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.forecast {
+  margin-top: 20px;
+}
+
+.forecast h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.forecast-grid {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+.forecast-day {
+  min-width: 110px;
+  background: rgba(255,255,255,0.7);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.forecast-day img {
+  width: 50px;
+  height: 50px;
+}
+
+#toggleNight {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background: #2980b9;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#toggleNight:hover {
+  background: #1c5980;
+}
+
+body.night {
+  background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #ecf0f1;
+}
+
+body.night .tile,
+body.night .current-weather,
+body.night .forecast-day {
+  background: rgba(0,0,0,0.5);
+}

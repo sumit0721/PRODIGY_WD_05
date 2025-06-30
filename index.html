@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Weather Forecast</h1>
+      <div class="search">
+        <input type="text" id="cityInput" placeholder="Enter city name...">
+        <button id="searchBtn">Search</button>
+      </div>
+      <p id="currentDate"></p>
+    </header>
+
+    <section class="current-weather">
+      <div class="temp-info">
+        <h2 id="temp">--°C</h2>
+        <p id="feelsLike">Feels like --°C</p>
+      </div>
+      <div class="details">
+        <div>Humidity: <span id="humidity">--%</span></div>
+      </div>
+    </section>
+
+    <section class="extra-details">
+      <div class="tile">Wind: <span id="wind">-- km/h</span></div>
+      <div class="tile">Pressure: <span id="pressure">-- hPa</span></div>
+      <div class="tile">Visibility: <span id="visibility">-- km</span></div>
+    </section>
+
+    <section class="forecast">
+      <h3>5 Day Forecast</h3>
+      <div class="forecast-grid" id="forecastGrid"></div>
+    </section>
+
+    <button id="toggleNight">Toggle Night Mode</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
